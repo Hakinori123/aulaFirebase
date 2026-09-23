@@ -7,7 +7,7 @@ export default function Login({navigation}){
     const [senha, setSenha] = useState('')
     
     async function realizarLogin() {
-        if(!email | !senha)
+        if(!email | !senha){
             alert("Preencha todos os campos")
             return
         }
@@ -47,4 +47,4 @@ export default function Login({navigation}){
             />
         </View>
     )
-}    
+}
